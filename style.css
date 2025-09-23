@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6cb8ff, #3ddad7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#task-inp {
+    width: 320px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+
+#task-inp:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+#add-task-btn {
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007BFF, #00c6ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#add-task-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+    transform: translateY(-2px);
+}
+
+#task-container {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    min-height: 120px;
+}
+
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+/* Hover effect already set */
+#task-list li:hover {
+    background: #e9f5ff;
+}
+
+/* Checkbox */
+#task-list li #complete-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #007bff; /* modern browsers */
+    transition: transform 0.2s ease;
+}
+
+#task-list li #complete-checkbox:hover {
+    transform: scale(1.1);
+}
+
+/* Completed Task Styling */
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #f0f9f0;
+    opacity: 0.8;
+}
+
+/* Delete Button */
+#task-list li .delete-btn {
+    background: linear-gradient(135deg, #ff4d4f, #ff6b6b);
+    border: none;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(255, 77, 79, 0.3);
+}
+
+#task-list li .delete-btn:hover {
+    background: linear-gradient(135deg, #d9363e, #ff4d4f);
+    transform: translateY(-2px);
+}
