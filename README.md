@@ -14,11 +14,6 @@ It allows users to add tasks, mark them as completed, and delete them easily.
 
 ---
 
-## 📸 Preview
-*(Add a screenshot of your app here if you like)*
-
----
-
 ## 🛠️ Technologies Used
 - **HTML5** – structure  
 - **CSS3** – styling (modern color scheme, hover states, gradients)  
